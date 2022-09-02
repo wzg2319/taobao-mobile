@@ -6,8 +6,17 @@
 				"navigationBarTitleText": "uni-app",
 				"navigationStyle": "custom"
 			}
-		}
-	],
+		},
+		{
+            "path" : "pages/index/how",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "uni-app",
+                "enablePullDownRefresh":"custom"
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
