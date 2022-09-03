@@ -103,7 +103,7 @@
 				</view>
 			</view>
 		</view>
-
+	
 	</view>
 	<view class="box">
 		<image src="../../static/logo.png" mode=""></image>
@@ -126,7 +126,7 @@
 				</view>
 			</view>
 		</view>
-	
+
 	</view>
 	</view>
 
@@ -173,6 +173,7 @@
 
 		.anniu2 {
 			display: flex;
+			justify-content: flex-end;
 			width: 60rpx;
 			height: 50rpx;
 
@@ -180,7 +181,8 @@
 		}
 
 		.anniu3 {
-
+			display: flex;
+			justify-content: flex-end;
 			width: 60rpx;
 			height: 20rpx;
 
@@ -195,6 +197,7 @@
 		}
 
 		.anniu {
+			position: absolute;
 			width: 100%;
 			border: 1px solid yellow;
 			display: flex;

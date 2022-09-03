@@ -115,7 +115,7 @@
 				<p>购物车</p>
 			</view>
 
-			<view>
+			<view @click="test2">
 				<image mode="widthFix" src="../../static/logo.png"></image>
 				<p>我的</p>
 			</view>
