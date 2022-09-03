@@ -37,6 +37,24 @@
          }
             
         }
+        ,{
+            "path" : "pages/index/sousuo",
+            "style" :                                                                                    
+            {
+         "navigationBarTitleText": "uni-app",
+             "enablePullDownRefresh": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/xiangqing",
+            "style" :                                                                                    
+            {
+         "navigationBarTitleText": "uni-app",
+             "enablePullDownRefresh": "custom"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
