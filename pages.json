@@ -8,54 +8,58 @@
 			}
 		},
 		{
-            "path" : "pages/index/how",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "uni-app",
-                "enablePullDownRefresh":"custom"
-            }
-            
-        }
-        ,{
-            "path" : "pages/index/me",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "uni-app",
-                "enablePullDownRefresh": "custom"
-            }
-            
-        }
-        ,{
+			"path": "pages/index/how",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+			}
 
-        }
-        ,{
-            "path" : "pages/index/shopping",
-            "style" :                                                                                    
-            {
-         "navigationBarTitleText": "uni-app",
-             "enablePullDownRefresh": "custom"
-         }
-            
-        }
-        ,{
-            "path" : "pages/index/sousuo",
-            "style" :                                                                                    
-            {
-         "navigationBarTitleText": "uni-app",
-             "enablePullDownRefresh": "custom"
-            }
-            
-        }
-        ,{
-            "path" : "pages/index/xiangqing",
-            "style" :                                                                                    
-            {
-         "navigationBarTitleText": "uni-app",
-             "enablePullDownRefresh": "custom"
-            }
-            
-        }
-    ],
+		}, {
+			"path": "pages/index/me",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+			}
+
+		}, {
+
+		}, {
+			"path": "pages/index/shopping",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+			}
+
+		}, {
+			"path": "pages/index/sousuo",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+			}
+
+		}, {
+			"path": "pages/index/xiangqing",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+			}
+
+		}, {
+			"path": "pages/index/spxiangqing",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+			}
+
+		}, {
+			"path": "pages/index/fukuan",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+			}
+
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
