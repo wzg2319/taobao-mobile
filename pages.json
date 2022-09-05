@@ -59,7 +59,70 @@
 			}
 
 		}
-	],
+	    ,{
+            "path" : "pages/index/pingjia",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/shouhuo",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/daifukuan",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+            }
+            
+        },
+		{
+		    "path" : "pages/index/quanbu",
+		    "style" :                                                                                    
+		    {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+		    }
+		    
+		},
+		{
+		    "path" : "pages/index/daifahuo",
+		    "style" :                                                                                    
+		    {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+		    }
+		    
+		},
+		{
+		    "path" : "pages/index/daishouhuo",
+		    "style" :                                                                                    
+		    {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+		    }
+		    
+		},
+		{
+		    "path" : "pages/index/daipingjia",
+		    "style" :                                                                                    
+		    {
+				"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+		    }
+		    
+		}
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
