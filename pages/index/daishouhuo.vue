@@ -9,11 +9,11 @@
 		<image src="../../static/heigengduo.png" mode="" style="height: 50rpx; width: 40rpx;"></image>
 		</view>
 	<view class="jingang">
-		<p>全部</p>
-		<p>待付款</p>
-		<p>待发货</p>
-		<p>待收货</p>
-		<p>待评价</p>
+		<p>{{name}}</p>
+		<p>{{name2}}</p>
+		<p>{{name3}}</p>
+		<p>{{name4}}</p>
+		<p>{{name5}}</p>
 	</view>
 		</view>
 	<view class="shangpin">
@@ -137,7 +137,7 @@
 <script>
 	export default {
 		data() {
-			return {
+			return {name:"全部",name2:"代付款" ,name3:"待发货",name4:"待收货",name5:"待评价"
 				
 			}
 		},

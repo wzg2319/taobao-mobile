@@ -22,9 +22,9 @@
 				<image src="../../static/logo.png" mode=""></image>
 				<p>天猫新品</p>
 			</view>
-			<view @click="test" class="">
+			<view @click="toPath" class="">
 				<image src="../../static/logo.png" mode=""></image>
-				<p>今日爆款</p>
+				<p>{{ name }}</p>
 			</view>
 			<view class="">
 				<image src="../../static/logo.png" mode=""></image>
@@ -106,7 +106,54 @@
 			</view>
 
 		</view>
-
+		<view class="jihe">
+			
+		
+<view class="guanggaoqu">
+	<image src="../../static/logo.png" mode=""></image>
+<p>这里是商品详情介绍</p>
+<p>￥9999</p>
+	
+</view>
+<view class="guanggaoqu">
+	<image src="../../static/logo.png" mode=""></image>
+<p>这里是商品详情介绍</p>
+<p>￥9999</p>
+	
+</view>
+</view>
+		<view class="jihe">
+					
+				
+		<view class="guanggaoqu">
+			<image src="../../static/logo.png" mode=""></image>
+		<p>这里是商品详情介绍</p>
+		<p>￥9999</p>
+			
+		</view>
+		<view class="guanggaoqu">
+			<image src="../../static/logo.png" mode=""></image>
+		<p>这里是商品详情介绍</p>
+		<p>￥9999</p>
+			
+		</view>
+		</view>
+		<view class="jihe">
+					
+				
+		<view class="guanggaoqu">
+			<image src="../../static/logo.png" mode=""></image>
+		<p>这里是商品详情介绍</p>
+		<p>￥9999</p>
+			
+		</view>
+		<view class="guanggaoqu">
+			<image src="../../static/logo.png" mode=""></image>
+		<p>这里是商品详情介绍</p>
+		<p>￥9999</p>
+			
+		</view>
+		</view>
 		<view class="nav">
 <image src="../../static/qiandao.png" mode=""></image>
 
@@ -125,27 +172,52 @@
 </template>
 
 
+
+
 <script>
 	export default{
+		data(){
+			return{
+				name:'今日爆款'
+			}
+		},
+
+		
 		methods:{
-			test(){
+			test2(){
+				uni.navigateTo({
+					url: 'me'
+				});
+			},
+			toPath(a){
 				uni.navigateTo({
 					url: 'how'
 				});
-				console.log('run')
 			}
 		}
 	}
 </script>
 
 
+
+
+
 <style lang="scss">
+	.jihe{display: flex;
+	justify-content: space-around;}
+	.guanggaoqu{background-color: white;
+	margin: 20rpx;
+	image{width: 300rpx;
+	height: 300rpx;}
+		
+	}
 	.Navigation {
 		display: flex;
 		background-color:#f4f4f4 ;
 	}
 
 	.nav {
+		background-color: white;
 		box-sizing: border-box;
 	position: fixed;
 	bottom: 0rpx;

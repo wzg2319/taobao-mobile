@@ -122,6 +122,15 @@
 		    }
 		    
 		}
+        ,{
+            "path" : "pages/index/tianmaoxinpin",
+            "style" :                                                                                    
+            {
+			"navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": "custom"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
