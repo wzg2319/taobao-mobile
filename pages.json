@@ -21,9 +21,8 @@
 				"enablePullDownRefresh": "custom"
 			}
 
-		}, {
-
-		}, {
+		}, 
+		{
 			"path": "pages/index/shopping",
 			"style": {
 				"navigationBarTitleText": "uni-app",

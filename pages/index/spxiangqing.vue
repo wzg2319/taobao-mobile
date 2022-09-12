@@ -92,9 +92,11 @@
 				</view>
 		</view>
 		
+		
+		<h1 v-if="popShow" @click="popShow = !popShow">我是弹窗</h1>
 	<view class="xiabuyou">
-		<p>加入购物车</p>
-		<p>立即购买</p>
+		<p @click="onShopCar">加入购物车</p>
+		<p @click="buy">立即购买</p>
 	</view>
 	</view>
 	</view>
@@ -103,12 +105,28 @@
 <script>
 	export default {
 		data() {
-			return {left
-
+			return {
+				popShow:false
 			}
 		},
 		methods: {
-
+				onShopCar(){
+					let storageShop = uni.getStorageSync('shop')
+					if(storageShop){
+						storageShop += 1
+						uni.setStorageSync('shop',storageShop);
+					}else{
+						uni.setStorageSync('shop',1);
+					}
+					
+					uni.showToast({
+						title: `加入购物车成功,您有${storageShop}件商品在购物车内`,
+						duration: 2000
+					});
+				},
+				// buy(){
+				// 	this.popShow = true
+				// },
 		}
 	}
 </script>

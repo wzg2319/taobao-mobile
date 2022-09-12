@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="beijing">
 		<view class="Navigation">
 			<view class="home">
 				<image mode="widthFix" src="../../static/taobaologo.png"></image>
@@ -19,43 +19,43 @@
 		</view>
 		<view class="advertise">
 			<view class="">
-				<image src="../../static/logo.png" mode=""></image>
+				<image src="../../static/tianmaoxinpin.webp" mode=""></image>
 				<p>天猫新品</p>
 			</view>
 			<view @click="toPath" class="">
-				<image src="../../static/logo.png" mode=""></image>
+			<image src="../../static/jinribaokuan.webp" mode=""></image>
 				<p>{{ name }}</p>
 			</view>
 			<view class="">
-				<image src="../../static/logo.png" mode=""></image>
+				<image src="../../static/tianmaoguoji.webp" mode=""></image>
 				<p>天猫国际</p>
 			</view>
 			<view class="">
-				<image src="../../static/logo.png" mode=""></image>
+				<image src="../../static/feizhulvxing.webp" mode=""></image>
 				<p>飞猪旅行</p>
 			</view>
 			<view class="">
-				<image src="../../static/logo.png" mode=""></image>
+				<image src="../../static/tianmaochaoshi.webp" mode=""></image>
 				<p>天猫超市</p>
 			</view>
 			<view class="">
-				<image src="../../static/logo.png" mode=""></image>
+			<image src="../../static/taobaochihuo.webp" mode=""></image>
 				<p>淘宝吃货</p>
 			</view>
 			<view class="">
-				<image src="../../static/logo.png" mode=""></image>
+				<image src="../../static/shengqianka.webp" mode=""></image>
 				<p>省钱卡</p>
 			</view>
 			<view class="">
-				<image src="../../static/logo.png" mode=""></image>
+			<image src="../../static/lingtaojinbi.webp" mode=""></image>
 				<p>领淘金币</p>
 			</view>
 			<view class="">
-				<image src="../../static/logo.png" mode=""></image>
+			<image src="../../static/alipaimai.webp" mode=""></image>
 				<p>阿里拍卖</p>
 			</view>
 			<view class="">
-				<image src="../../static/logo.png" mode=""></image>
+				<image src="../../static/分类.webp" mode=""></image>
 				<p>分类</p>
 			</view>
 		</view>
@@ -68,8 +68,8 @@
 					<p>品牌折扣</p>
 				</view>
 				<view class="poster">
-					<image src="../../static/logo.png" mode=""></image>
-					<image src="../../static/logo.png" mode=""></image>
+					<image src="../../static/tiantiantemai1.webp" mode=""></image>
+					<image src="../../static/tiantiantemai2.webp" mode=""></image>
 				</view>
 			</view>
 			<view class="region">
@@ -78,8 +78,8 @@
 					<p>特色</p>
 				</view>
 				<view class="poster">
-					<image src="../../static/logo.png" mode=""></image>
-					<image src="../../static/logo.png" mode=""></image>
+					<image src="../../static/meirihaodian1.webp" mode=""></image>
+					<image src="../../static/meirihaodian2.webp" mode=""></image>
 				</view>
 			</view>
 
@@ -89,8 +89,8 @@
 					<p>1元秒杀</p>
 				</view>
 				<view class="poster">
-					<image src="../../static/logo.png" mode=""></image>
-					<image src="../../static/logo.png" mode=""></image>
+					<image src="../../static/tiantiantemai1.webp" mode=""></image>
+					<image src="../../static/tiantiantemai2.webp" mode=""></image>
 				</view>
 			</view>
 
@@ -100,8 +100,8 @@
 					<p>好口碑</p>
 				</view>
 				<view class="poster">
-					<image src="../../static/logo.png" mode=""></image>
-					<image src="../../static/logo.png" mode=""></image>
+					<image src="../../static/youhaohuo1.webp" mode=""></image>
+					<image src="../../static/youhaohuo2.webp" mode=""></image>
 				</view>
 			</view>
 
@@ -109,14 +109,14 @@
 		<view class="jihe">
 			
 		
-<view class="guanggaoqu">
-	<image src="../../static/logo.png" mode=""></image>
+<view class="guanggaoqu" @click="details">
+<image src="../../static/zhuyeguanggao1.webp" mode=""></image>
 <p>这里是商品详情介绍</p>
 <p>￥9999</p>
 	
 </view>
-<view class="guanggaoqu">
-	<image src="../../static/logo.png" mode=""></image>
+<view class="guanggaoqu" @click="details">
+<image src="../../static/zhuyeguanggao2.webp" mode=""></image>
 <p>这里是商品详情介绍</p>
 <p>￥9999</p>
 	
@@ -125,14 +125,14 @@
 		<view class="jihe">
 					
 				
-		<view class="guanggaoqu">
-			<image src="../../static/logo.png" mode=""></image>
+		<view class="guanggaoqu" @click="details" >
+<image src="../../static/zhuyeguanggao3.webp" mode=""></image>
 		<p>这里是商品详情介绍</p>
 		<p>￥9999</p>
 			
 		</view>
-		<view class="guanggaoqu">
-			<image src="../../static/logo.png" mode=""></image>
+		<view class="guanggaoqu" @click="details">
+<image src="../../static/zhuyeguanggao4.webp" mode=""></image>
 		<p>这里是商品详情介绍</p>
 		<p>￥9999</p>
 			
@@ -141,14 +141,14 @@
 		<view class="jihe">
 					
 				
-		<view class="guanggaoqu">
-			<image src="../../static/logo.png" mode=""></image>
+		<view class="guanggaoqu" @click="details">
+<image src="../../static/zhuyeguanggao5.webp" mode=""></image>
 		<p>这里是商品详情介绍</p>
 		<p>￥9999</p>
 			
 		</view>
-		<view class="guanggaoqu">
-			<image src="../../static/logo.png" mode=""></image>
+		<view class="guanggaoqu" @click="details">
+<image src="../../static/zhuyeguanggao6.webp" mode=""></image>
 		<p>这里是商品详情介绍</p>
 		<p>￥9999</p>
 			
@@ -157,13 +157,13 @@
 		<view class="nav">
 <image src="../../static/qiandao.png" mode=""></image>
 
-			<view>
+			<view @click="shopcar">
 				<image src="../../static/购物车空.png" mode=""></image>
 				<p>购物车</p>
 			</view>
 
 			<view @click="test2">
-				<image mode="widthFix" src="../../static/logo.png"></image>
+				<image src="../../static/me.png" mode=""></image>
 				<p>我的</p>
 			</view>
 		</view>
@@ -184,6 +184,16 @@
 
 		
 		methods:{
+		details(){
+			uni.navigateTo({
+				url: 'spxiangqing'
+			});
+		},
+			shopcar(){
+				uni.navigateTo({
+					url: 'shopping'
+				});
+			},
 			test2(){
 				uni.navigateTo({
 					url: 'me'
@@ -203,11 +213,14 @@
 
 
 <style lang="scss">
+	.beijing{background-color:#f4f4f4 ;}
 	.jihe{display: flex;
 	justify-content: space-around;}
 	.guanggaoqu{background-color: white;
+	border-radius: 0.5rem;
 	margin: 20rpx;
-	image{width: 300rpx;
+	image{	border-radius: 0.5rem;
+		width: 300rpx;
 	height: 300rpx;}
 		
 	}
@@ -222,7 +235,6 @@
 	position: fixed;
 	bottom: 0rpx;
 	width: 100vw;
-		border: 1px solid red;
 		display: flex;
 		justify-content: space-around;
 		text-align: center;
@@ -236,6 +248,7 @@ align-items: center;
 	}
 
 	.uni-input {
+		padding-left: 20rpx;
 		width: 300rpx;
 		height: 60rpx;
 	}
@@ -268,18 +281,17 @@ align-items: center;
 	}
 
 	.advertise {
-
+background-color: white;
+padding: 10rpx;
+border-radius: 0.5rem;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 margin:20rpx;
 font-size: 30rpx;
 		image {
-			width: 100rpx;
+			width: 130rpx;
 			height: 100rpx;
-			margin-top: 20rpx;
-			margin-left: 20rpx;
-			margin-right: 20rpx;
 
 		}
 
@@ -292,8 +304,11 @@ font-size: 30rpx;
 		margin-left: 20rpx;
 
 		p {
-			background-color: red;
-			border-radius: 0.1rem;
+			margin-left: 20rpx;
+			border-radius: 0.5rem;
+			background-color: #ff4200;
+			color: white;
+			font-size: 30rpx;
 
 
 
@@ -306,14 +321,20 @@ font-size: 30rpx;
 		image {
 			width: 150rpx;
 			height: 150rpx;
-			margin-left: 20rpx
+margin-left: 20rpx;
+
 		}
 
 	}
 
 
 	.all {
+		padding-top: 30rpx;
+		border-radius: 0.5rem;
+		margin: 20rpx;
+		background-color: white;
 		display: flex;
+		justify-content: space-around;
 		flex-wrap: wrap;
 	}
 

@@ -75,9 +75,9 @@
 		</view>
 	</view>
 	<view class="nav">
-	<image src="../../static/qiandao.png" mode=""></image>
+	<image src="../../static/qiandao.png" mode="" @click="index"></image>
 	
-				<view>
+				<view @click="shopcar">
 					<image src="../../static/购物车空.png" mode=""></image>
 					<p>购物车</p>
 				</view>
@@ -98,7 +98,16 @@
 			}
 		},
 		methods: {
-			
+			shopcar(){
+				uni.navigateTo({
+					url: 'shopping'
+				});
+			},
+			index(){
+				uni.navigateTo({
+					url: 'index'
+				});
+			},
 		}
 	}
 </script>

@@ -5,11 +5,13 @@
 			<p>管理</p>
 		</view>
 		<p>共33件宝贝</p>
-		<view class="yeqian">
+
+
+		<view v-for="(item,index) in items" class="yeqian" :key="index"> 
 			<view class="biaoti">
 				<view class="biaotizuo">
 					<image src="../../static/xuanze.webp" mode=""></image>
-					xxx专卖店
+					{{item.title}}
 
 				</view>
 				<view class="biaotiyou">
@@ -22,122 +24,106 @@
 					<image class="zuo2" src="../../static/logo.png" mode=""></image>
 				</view>
 				<view class="mainyou">
-					<p>商品的详细描述</p>
-					<p>颜色尺码</p>
+					<p>{{item.details}}</p>
+					<p>{{item.color}}尺码</p>
 					<view class="mainyouxia">
-						<p>￥99</p>
+						<p>￥{{item.nums}}</p>
 						<p>数量</p>
 					</view>
+				</view>
+				
+				<view @click="deleteView(index)">
+					删除
 				</view>
 			</view>
 
-
-		</view>
-		<view class="yeqian">
-			<view class="biaoti">
-				<view class="biaotizuo">
-					<image src="../../static/xuanze.webp" mode=""></image>
-					xxx专卖店
-		
-				</view>
-				<view class="biaotiyou">
-					领券
-				</view>
-			</view>
-			<view class="main">
-				<view class="mainzuo">
-					<image class="zuo1" src="../../static/xuanze.webp" mode=""></image>
-					<image class="zuo2" src="../../static/logo.png" mode=""></image>
-				</view>
-				<view class="mainyou">
-					<p>商品的详细描述</p>
-					<p>颜色尺码</p>
-					<view class="mainyouxia">
-						<p>￥99</p>
-						<p>数量</p>
-					</view>
-				</view>
-			</view>
-		
-		
-		</view>
-		<view class="yeqian">
-			<view class="biaoti">
-				<view class="biaotizuo">
-					<image src="../../static/xuanze.webp" mode=""></image>
-					xxx专卖店
-		
-				</view>
-				<view class="biaotiyou">
-					领券
-				</view>
-			</view>
-			<view class="main">
-				<view class="mainzuo">
-					<image class="zuo1" src="../../static/xuanze.webp" mode=""></image>
-					<image class="zuo2" src="../../static/logo.png" mode=""></image>
-				</view>
-				<view class="mainyou">
-					<p>商品的详细描述</p>
-					<p>颜色尺码</p>
-					<view class="mainyouxia">
-						<p>￥99</p>
-						<p>数量</p>
-					</view>
-				</view>
-			</view>
-		
-		
 		</view>
 		<view class="nav">
-		<image src="../../static/qiandao.png" mode=""></image>
-		
-					<view>
-						<image src="../../static/购物车空.png" mode=""></image>
-						<p>购物车</p>
-					</view>
-		
-					<view @click="test2">
-						<image mode="widthFix" src="../../static/logo.png"></image>
-						<p>我的</p>
-					</view>
-				</view>
-		
+			<image src="../../static/qiandao.png" mode=""></image>
+
+			<view>
+				<image src="../../static/购物车空.png" mode=""></image>
+				<p>购物车</p>
+			</view>
+
+			<view @click="test2">
+				<image mode="widthFix" src="../../static/logo.png"></image>
+				<p>我的</p>
+			</view>
+		</view>
+
 	</view>
 </template>
 
 <script>
 	export default {
+		created() {
+			this.showList()
+		},
+		watch:{
+			nums(){
+			this.showList()
+			const storageShop = uni.getStorageSync('shop')
+			uni.showToast({
+				title: `删除购物车成功,您有${storageShop}件商品在购物车内`,
+				duration: 2000
+			});
+			}
+		},
 		data() {
 			return {
-
+				items: [],
+				nums:0
 			}
 		},
 		methods: {
+			deleteView(index){
+				const storageShop = uni.getStorageSync('shop')
+				this.nums = storageShop !== 0 ? storageShop - 1 : 0
+				uni.setStorageSync('shop',this.nums)
+			},
+			showList(){
+				const fakeShop = {
+							title: '飞科专卖店',
+							image: '',
+							nums: '99',
+							details: '详情描述',
+							color: 'black'
+						}
+				let arr = []
+				const storageShop = uni.getStorageSync('shop')
+				if (storageShop) {
+					for(let i = 0; i < storageShop; i++){
+						arr.push(fakeShop)
+					}
+				}
+				this.items = arr
+			}
+		},
 
-		}
 	}
 </script>
 
 <style lang="scss">
 	.nav {
-			box-sizing: border-box;
+		box-sizing: border-box;
 		position: fixed;
 		bottom: 0rpx;
 		width: 100vw;
-			border: 1px solid red;
-			display: flex;
-			justify-content: space-around;
-			text-align: center;
-	
-	
-	align-items: center;
-			image {
-				width: 80rpx;
-				height: 80rpx;
-			}
+		border: 1px solid red;
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+
+
+		align-items: center;
+
+		image {
+			width: 80rpx;
+			height: 80rpx;
 		}
-	
+	}
+
 	.main {
 		display: flex;
 	}
@@ -148,7 +134,7 @@
 
 	.mainyouxia {
 		display: flex;
-				align-items: flex-end;
+		align-items: flex-end;
 		justify-content: space-between;
 
 	}
