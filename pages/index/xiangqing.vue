@@ -22,57 +22,57 @@
 				</view>
 				<view class="xuanxiangyou">
 					<image src="../../static/fangkuai.png" mode=""></image>
-					<p>|</p>
+
 					<p>筛选</p>
 			<image src="../../static/shaixuan.png" mode=""></image>	
 				</view>
 		</view>
 <view class="liulan">
 	<view class="liulanzuo">
-	<image src="../../static/logo.png" mode=""></image>
-		<p>xxx  xxx  xxx</p>
-		<p>aaa|aaa|aaa</p>
-		<p>howmuch</p>
+<image src="../../static/spxiangqing1.webp" mode=""></image>
+	<p>商品详细介绍</p>
+		<p>材质|型号</p>
+		<p>$999</p>
 		<p>进店</p>
 	</view>
 	<view class="liulanyou">
-	<image src="../../static/logo.png" mode=""></image>
-		<p>xxx  xxx  xxx</p>
-		<p>aaa|aaa|aaa</p>
-		<p>howmuch</p>
+<image src="../../static/youhaohuo2.webp" mode=""></image>
+	<p>商品详细介绍</p>
+		<p>材质|型号</p>
+		<p>$999</p>
 		<p>进店</p>
 	</view>
 </view>
 <view class="liulan">
 	<view class="liulanzuo">
-	<image src="../../static/logo.png" mode=""></image>
-		<p>xxx  xxx  xxx</p>
-		<p>aaa|aaa|aaa</p>
-		<p>howmuch</p>
-		<p>进店</p>
+<image src="../../static/zhuyeguanggao5.webp" mode=""></image>
+	<p>商品详细介绍</p>
+	<p>材质|型号</p>
+	<p>$999</p>
+	<p>进店</p>
 	</view>
 	<view class="liulanyou">
-	<image src="../../static/logo.png" mode=""></image>
-		<p>xxx  xxx  xxx</p>
-		<p>aaa|aaa|aaa</p>
-		<p>howmuch</p>
+<image src="../../static/youhaohuo1.webp" mode=""></image>
+		<p>商品详细介绍</p>
+		<p>材质|型号</p>
+		<p>$999</p>
 		<p>进店</p>
 	</view>
 </view>
 <view class="liulan">
 	<view class="liulanzuo">
-	<image src="../../static/logo.png" mode=""></image>
-		<p>xxx  xxx  xxx</p>
-		<p>aaa|aaa|aaa</p>
-		<p>howmuch</p>
-		<p>进店</p>
+<image src="../../static/tiantiantemai2.webp" mode=""></image>
+	<p>商品详细介绍</p>
+	<p>材质|型号</p>
+	<p>$999</p>
+	<p>进店</p>
 	</view>
 	<view class="liulanyou">
-	<image src="../../static/logo.png" mode=""></image>
-		<p>xxx  xxx  xxx</p>
-		<p>aaa|aaa|aaa</p>
-		<p>howmuch</p>
-		<p>进店</p>
+<image src="../../static/zhuyeguanggao2.webp" mode=""></image>
+	<p>商品详细介绍</p>
+	<p>材质|型号</p>
+	<p>$999</p>
+	<p>进店</p>
 	</view>
 </view>
 	</view>
@@ -93,6 +93,9 @@
 
 <style lang="scss">
 	.liulan{
+		p{font-size: 25rpx;
+		margin: 5rpx;}
+		image{border-radius:0.5rem;}
 		display: flex;
 		justify-content: space-around;
 		margin-top: 20rpx;
@@ -100,7 +103,8 @@
 		height: 300rpx;}
 	}
 	.xuanxiangzuo{
-		p{padding-right: 110rpx;
+		margin-left: 40rpx;
+		p{padding-right: 100rpx;
 			width: 70rpx;}
 		display:flex;}
 .xuanxiangyou{

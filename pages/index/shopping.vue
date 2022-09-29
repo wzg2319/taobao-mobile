@@ -39,15 +39,15 @@
 
 		</view>
 		<view class="nav">
-			<image src="../../static/qiandao.png" mode=""></image>
+<image src="../../static/qiandao.png" mode="" @click="index"></image>
 
-			<view>
+			<view @click="shopcar">
 				<image src="../../static/购物车空.png" mode=""></image>
 				<p>购物车</p>
 			</view>
 
 			<view @click="test2">
-				<image mode="widthFix" src="../../static/logo.png"></image>
+				<image src="../../static/me.png" mode=""></image>
 				<p>我的</p>
 			</view>
 		</view>
@@ -77,6 +77,31 @@
 			}
 		},
 		methods: {
+	index(){
+		uni.navigateTo({
+			url: 'index'
+		});
+	},
+			details(){
+				uni.navigateTo({
+					url: 'spxiangqing'
+				});
+			},
+				shopcar(){
+					uni.navigateTo({
+						url: 'shopping'
+					});
+				},
+				test2(){
+					uni.navigateTo({
+						url: 'me'
+					});
+				},
+				toPath(a){
+					uni.navigateTo({
+						url: 'how'
+					});
+				},
 			deleteView(index){
 				const storageShop = uni.getStorageSync('shop')
 				this.nums = storageShop !== 0 ? storageShop - 1 : 0
@@ -106,21 +131,24 @@
 
 <style lang="scss">
 	.nav {
+P{font-size: 30rpx
+;}
+		background-color: white;
 		box-sizing: border-box;
-		position: fixed;
-		bottom: 0rpx;
-		width: 100vw;
-		border: 1px solid red;
+	position: fixed;
+	bottom: 0rpx;
+	width: 100vw;
 		display: flex;
 		justify-content: space-around;
 		text-align: center;
 
 
-		align-items: center;
+align-items: center;
 
 		image {
-			width: 80rpx;
-			height: 80rpx;
+			padding-top: 20rpx;
+			width: 50rpx;
+			height: 50rpx;
 		}
 	}
 

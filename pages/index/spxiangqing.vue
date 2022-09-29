@@ -12,14 +12,14 @@
 			<image src="../../static/heigengduo.png" mode=""></image>
 		</view>
 		<view class="gundong">
-			<image src="../../static/logo.png" mode=""></image>
+			<image src="../../static/zhuyeguanggao4.webp" mode=""></image>
 		</view>
 		<view class="xiangqing">
-			<p class="biaojia">
+			<p class="biaojia" style="font-size: 35rpx;">
 				￥999
 			</p>
 			<p>这里是商品的大概简介</p>
-			<view class="xiangqingxia">
+			<view class="xiangqingxia" style="font-size: 25rpx;">
 				<p>推荐</p>
 				<p>帮我选</p>
 				<p>分享</p>
@@ -38,7 +38,7 @@
 				</view>
 			</view>
 
-			<view class="dizhixia">
+			<view class="dizhixia" style="font-size: 25rpx;">
 				<p>保障</p>
 				<p>七天无理由</p>
 			</view>
@@ -60,7 +60,7 @@
 		<view class="shangjia">
 			<view class="shangjiashang">
 				<view class="">
-						<image src="../../static/logo.png" mode="" style="width: 80rpx; height: 80rpx;"></image>
+						<image src="../../static/dianpu1.jpg" mode="" style="width: 50rpx; height: 50rpx;"></image>
 					</view>
 					<p>商家名称</p>
 				
@@ -79,15 +79,15 @@
 	<view class="xiabu">
 		<view class="xiabuzuo">
 			<view class="dianpu">
-						<image src="../../static/logo.png" mode=""></image>
+						<image src="../../static/dianpu.png" mode=""></image>
 					<p>店铺</p>
 					</view>
 					<view class="kefu">
-			<image src="../../static/logo.png" mode=""></image>			
+<image src="../../static/kefuhei.png" mode=""></image>	
 					<p>客服</p>
 					</view>
 				<view class="shoucang">
-					<image src="../../static/logo.png" mode=""></image>
+<image src="../../static/shoucanghei.png" mode=""></image>
 							<p>收藏</p>
 				</view>
 		</view>
@@ -170,12 +170,15 @@ border-radius: 1rem;
 	
 	}
 	.shangjiayou{
+		p{padding-top:
+		10rpx}
 		padding-left: 270rpx;
 	}
 	.shangjiashang{
 		display:flex;
 		margin: 20rpx;
-		p{padding-left:20rpx;}
+		p{padding-left:20rpx;
+		padding-top: 10rpx;}
 	}
 	.shangjia{padding: 20rpx;
 	margin: 20rpx;
@@ -183,7 +186,8 @@ border-radius: 1rem;
 		border-radius: 0.5rem;
 	}
 	.pingjia {
-
+padding-top: 10rpx;
+padding-bottom:10rpx;
 		background-color: white;
 		border-radius: 0.5rem;
 		margin: 20rpx;
@@ -212,6 +216,7 @@ border-radius: 1rem;
 		display: flex;
 
 		.dizhiyou {
+
 			display: flex;
 			justify-content: flex-end;
 			padding-left: 130rpx;
@@ -219,7 +224,8 @@ border-radius: 1rem;
 	}
 
 	.dizhi {
-
+padding-top: 10rpx;
+padding-bottom: 10rpx;
 		background-color: white;
 		border-radius: 0.5rem;
 		margin: 20rpx;
@@ -241,7 +247,8 @@ border-radius: 1rem;
 		margin: 20rpx;
 
 		p {
-			padding: 20rpx;
+padding-top:5rpx ;
+padding-left: 20rpx;
 		}
 	}
 
@@ -255,10 +262,10 @@ border-radius: 1rem;
 		display: flex;
 		justify-content: center;
 		image{
-		width: 300rpx;	
-		height: 300rpx;
+		width: 400rpx;	
+		height: 400rpx;
 		}
-		padding: 60rpx;
+		padding: 40rpx;
 	}
 
 	.daohang {
@@ -280,6 +287,6 @@ border-radius: 1rem;
 	}
 
 	.zong {
-		background-color: #d6d6d6;
+		background-color: #e8e8e8;
 	}
 </style>

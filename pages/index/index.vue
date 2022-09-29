@@ -214,7 +214,10 @@
 
 <style lang="scss">
 	.beijing{background-color:#f4f4f4 ;}
-	.jihe{display: flex;
+	.jihe{
+		p{font-size: 25rpx;
+			margin:10rpx}
+		display: flex;
 	justify-content: space-around;}
 	.guanggaoqu{background-color: white;
 	border-radius: 0.5rem;
@@ -230,6 +233,8 @@
 	}
 
 	.nav {
+P{font-size: 30rpx
+;}
 		background-color: white;
 		box-sizing: border-box;
 	position: fixed;
@@ -241,9 +246,11 @@
 
 
 align-items: center;
+
 		image {
-			width: 80rpx;
-			height: 80rpx;
+			padding-top: 20rpx;
+			width: 50rpx;
+			height: 50rpx;
 		}
 	}
 
@@ -304,6 +311,8 @@ font-size: 30rpx;
 		margin-left: 20rpx;
 
 		p {
+			padding-left: 10rpx;
+					padding-right: 10rpx;
 			margin-left: 20rpx;
 			border-radius: 0.5rem;
 			background-color: #ff4200;
